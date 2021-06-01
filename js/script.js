@@ -21,6 +21,12 @@ else{
 document.getElementById('parola').innerHTML = wordfirst + wordsecond;
 
 // Somma
+var sum = 0
+
+for(i = 0; i < 5; i ++){
+    var numbersum = prompt ('Inserisci un numero da sommare');
+    sum = sum + number
+}
 
 // Numero dispari
 for(i = 0; i < 6; i ++){
