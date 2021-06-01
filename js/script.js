@@ -5,21 +5,31 @@ var wordsecond = prompt ('Inserisci una parola casuale');
 var longfirst = wordfirst.length;
 var longsecond = wordsecond.length;
 
-document.getElementById('parola').innerHTML = wordfirst + wordsecond;
+if(longfirst > longsecond){
+    // vince first
+}
 
-
-// Numero dispari
-var number = prompt ('Inserisci un numero');
-var number = prompt ('Inserisci un numero');
-var number = prompt ('Inserisci un numero');
-var number = prompt ('Inserisci un numero');
-var number = prompt ('Inserisci un numero');
-var number = prompt ('Inserisci un numero');
-
-if (number % 2 == 0){
-    console.log ("This number is even.");
+else if (longsecond > longfirst){
+    // vince second
 }
 
 else{
-    document.getElementById('numero').innerHTML = number;
+    // parità
+}
+
+
+document.getElementById('parola').innerHTML = wordfirst + wordsecond;
+
+// Somma
+
+// Numero dispari
+for(i = 0; i < 6; i ++){
+    var number = prompt ('Inserisci un numero');
+    if (number % 2 == 0){
+        console.log ("This number is even.");
+    }
+    
+    else{
+        document.getElementById('numero').innerHTML +=  number;
+    }
 }
