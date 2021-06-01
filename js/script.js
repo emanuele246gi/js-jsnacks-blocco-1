@@ -1,15 +1,17 @@
-var wordfirst = prompt ();
-var wordsecond = prompt ();
 
-var longfirst = wordfirst.length;
-var longsecond = wordsecond.length;
 
-if (longfirst === longsecond){
-    document.getElementById('lista').innerHTML = 'Sono uguali' + ' ' + wordfirst + ' ' + wordsecond;
+// Numero dispari
+var number = prompt ();
+var number = prompt ();
+var number = prompt ();
+var number = prompt ();
+var number = prompt ();
+var number = prompt ();
 
-}else if (longfirst > longsecond){
-    document.getElementById('lista').innerHTML = wordfirst;
-    
-}else{
-    document.getElementById('lista').innerHTML = wordsecond;
+if (number % 2 == 0){
+    console.log ("This number is even.");
+}
+
+else{
+    document.getElementById('numero').innerHTML = number;
 }
