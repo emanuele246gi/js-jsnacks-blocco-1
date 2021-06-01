@@ -25,12 +25,17 @@ var sum = 0
 
 for(i = 0; i < 5; i ++){
     var numbersum = prompt ('Inserisci un numero da sommare');
-    sum = sum + number
+
+    // sum = sum + numbersum;
+
+    sum += numbersum;
 }
+
+document.getElementById('somma').innerHTML +=  sum;
 
 // Numero dispari
 for(i = 0; i < 6; i ++){
-    var number = prompt ('Inserisci un numero');
+    var number = parseInt(prompt ('Inserisci un numero'));
     if (number % 2 == 0){
         console.log ("This number is even.");
     }
